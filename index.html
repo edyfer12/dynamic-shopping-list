@@ -62,6 +62,7 @@
           //Append the list item as the child of the unordered list
           ul.appendChild(li);
           //Stylize the button with larger height, bolder font, readable font size and wider width
+          button.style.cssText = 'width: 70px; padding:px; font-size:13px; font-weight: bold; color:black;';
 
           //Add event listener for the button that if user clicks Delete, whole list item is removed
           button.addEventListener('click', () => {ul.removeChild(li)});
