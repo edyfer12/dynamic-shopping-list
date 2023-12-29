@@ -50,16 +50,16 @@
           let span = document.createElement('span');
           //Create an element for button
           let button = document.createElement('button');
-          //Append the list item as the child of the unordered list
-          ul.appendChild('li');
           //Append the span element as the child of the list item
-          li.appendChild('span');
+          li.appendChild(span);
           //Append the button element as the child of the list item
-          li.appendChild('button');
+          li.appendChild(button);
           //Set the value of the span as value of input entered
           span.textContent = addedValue;
           //Set the value of the button as Delete
           button.textContent = 'Delete';
+          //Append the list item as the child of the unordered list
+          ul.appendChild(li);
           //Add event listener for the button that if user clicks Delete, whole list item is removed
           button.addEventListener('click', () => {ul.removeChild(li)});
           //Use the focus method to encourage the user to enter more items on the input box
@@ -67,7 +67,7 @@
         }
         //Use event listener for the button located next to the input box
         button.addEventListener('click', addItem);
-        
+
     </script>
   </body>
 </html>
