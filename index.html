@@ -61,10 +61,11 @@
           button.textContent = 'Delete';
           //Append the list item as the child of the unordered list
           ul.appendChild(li);
+          //Stylize the button with larger height, bolder font, readable font size and wider width
 
           //Add event listener for the button that if user clicks Delete, whole list item is removed
           button.addEventListener('click', () => {ul.removeChild(li)});
-          
+
           //Use the focus method to encourage the user to enter more items on the input box
           input.focus();
         }
