@@ -38,6 +38,14 @@
         //Create variable that store reference to the button element
         let button = document.querySelector('button');
 
+        //Declare a function that if a user clicks on a button value is added on the list
+        function addItem(){
+          //Store the current value of the input element to the variable
+          let addedValue = input.value;
+          //Set the input box as empty string. Each time the user clicks on the button, they are able to enter new value.
+          input.value = '';
+        }
+
     </script>
   </body>
 </html>
